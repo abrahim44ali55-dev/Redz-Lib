@@ -10,7 +10,6 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-		-- 1 - Darker (Original)
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
@@ -23,7 +22,6 @@ local redzlib = {
 			["Color Text"] = Color3.fromRGB(243, 243, 243),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
 		},
-		-- 2 - Dark (Original)
 		Dark = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)),
@@ -36,7 +34,6 @@ local redzlib = {
 			["Color Text"] = Color3.fromRGB(245, 245, 245),
 			["Color Dark Text"] = Color3.fromRGB(190, 190, 190)
 		},
-		-- 3 - Purple (Original)
 		Purple = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
@@ -48,88 +45,13 @@ local redzlib = {
 			["Color Theme"] = Color3.fromRGB(150, 0, 255),
 			["Color Text"] = Color3.fromRGB(240, 240, 240),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		-- 4 - Ocean (Azraq Bahri)
-		Ocean = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 30, 45)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 40, 55)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(20, 30, 45))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(25, 35, 50),
-			["Color Stroke"] = Color3.fromRGB(40, 55, 75),
-			["Color Theme"] = Color3.fromRGB(0, 170, 255),
-			["Color Text"] = Color3.fromRGB(230, 240, 255),
-			["Color Dark Text"] = Color3.fromRGB(150, 170, 190)
-		},
-		-- 5 - Crimson (Ahmar)
-		Crimson = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 20, 20)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(40, 30, 30)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 20, 20))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(35, 25, 25),
-			["Color Stroke"] = Color3.fromRGB(60, 40, 40),
-			["Color Theme"] = Color3.fromRGB(220, 40, 60),
-			["Color Text"] = Color3.fromRGB(245, 235, 235),
-			["Color Dark Text"] = Color3.fromRGB(180, 150, 150)
-		},
-		-- 6 - Emerald (Akhdar Zumurudi)
-		Emerald = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 30, 25)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 40, 35)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(20, 30, 25))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(25, 35, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 60, 50),
-			["Color Theme"] = Color3.fromRGB(0, 200, 120),
-			["Color Text"] = Color3.fromRGB(235, 245, 240),
-			["Color Dark Text"] = Color3.fromRGB(150, 180, 160)
-		},
-		-- 7 - Sunset (Ghurub)
-		Sunset = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(35, 25, 15)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(45, 35, 25)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(35, 25, 15))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(40, 30, 20),
-			["Color Stroke"] = Color3.fromRGB(65, 50, 35),
-			["Color Theme"] = Color3.fromRGB(255, 120, 30),
-			["Color Text"] = Color3.fromRGB(255, 240, 220),
-			["Color Dark Text"] = Color3.fromRGB(200, 170, 150)
-		},
-		-- 8 - Midnight (Layli Azraq Ghamiq)
-		Midnight = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 15, 35)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25, 25, 45)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 15, 35))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(20, 20, 40),
-			["Color Stroke"] = Color3.fromRGB(35, 35, 65),
-			["Color Theme"] = Color3.fromRGB(90, 90, 255),
-			["Color Text"] = Color3.fromRGB(230, 230, 255),
-			["Color Dark Text"] = Color3.fromRGB(160, 160, 200)
-		},
-		-- 9 - Light (Fatih)
-		Light = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(240, 240, 240)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(250, 250, 250)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(240, 240, 240))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(235, 235, 235),
-			["Color Stroke"] = Color3.fromRGB(200, 200, 200),
-			["Color Theme"] = Color3.fromRGB(65, 150, 255),
-			["Color Text"] = Color3.fromRGB(30, 30, 30),
-			["Color Dark Text"] = Color3.fromRGB(100, 100, 100)
 		}
 	},
+
 	Info = {
-		Version = "1.1.0"
+		Version = "2.0.0",
+		Codename = "Remastered",
+		Author = "Redz Library Community"
 	},
 	Save = {
 		UISize = {550, 380},
@@ -967,12 +889,38 @@ local redzlib = {
 	end)()
 }
 
+-- Additional palettes are generated after the original theme table is created.
+do
+	local palettes = {
+		Ocean = {Color3.fromRGB(13, 27, 42), Color3.fromRGB(20, 45, 65), Color3.fromRGB(35, 75, 100), Color3.fromRGB(0, 180, 216)},
+		Midnight = {Color3.fromRGB(15, 18, 30), Color3.fromRGB(24, 29, 46), Color3.fromRGB(42, 49, 70), Color3.fromRGB(120, 110, 255)},
+		Emerald = {Color3.fromRGB(15, 28, 24), Color3.fromRGB(23, 43, 35), Color3.fromRGB(40, 65, 52), Color3.fromRGB(46, 204, 113)},
+		Crimson = {Color3.fromRGB(31, 17, 22), Color3.fromRGB(48, 25, 32), Color3.fromRGB(75, 38, 48), Color3.fromRGB(235, 75, 95)},
+		Sunset = {Color3.fromRGB(35, 22, 20), Color3.fromRGB(55, 33, 28), Color3.fromRGB(83, 48, 38), Color3.fromRGB(255, 145, 77)},
+		Rose = {Color3.fromRGB(35, 22, 31), Color3.fromRGB(55, 34, 49), Color3.fromRGB(82, 48, 72), Color3.fromRGB(244, 114, 182)},
+		Nord = {Color3.fromRGB(35, 42, 52), Color3.fromRGB(46, 55, 68), Color3.fromRGB(66, 78, 94), Color3.fromRGB(136, 192, 208)},
+		Dracula = {Color3.fromRGB(30, 30, 42), Color3.fromRGB(42, 42, 58), Color3.fromRGB(62, 62, 82), Color3.fromRGB(189, 147, 249)},
+		Light = {Color3.fromRGB(238, 241, 247), Color3.fromRGB(255, 255, 255), Color3.fromRGB(215, 221, 232), Color3.fromRGB(55, 115, 220)},
+		Monochrome = {Color3.fromRGB(18, 18, 18), Color3.fromRGB(32, 32, 32), Color3.fromRGB(55, 55, 55), Color3.fromRGB(220, 220, 220)}
+	}
+	for name, colors in pairs(palettes) do
+		local base, surface, stroke, accent = unpack(colors)
+		redzlib.Themes[name] = {
+			["Color Hub 1"] = ColorSequence.new({ColorSequenceKeypoint.new(0, base), ColorSequenceKeypoint.new(0.5, surface), ColorSequenceKeypoint.new(1, base)}),
+			["Color Hub 2"] = surface, ["Color Stroke"] = stroke, ["Color Theme"] = accent,
+			["Color Text"] = name == "Light" and Color3.fromRGB(28, 32, 42) or Color3.fromRGB(245, 247, 250),
+			["Color Dark Text"] = name == "Light" and Color3.fromRGB(90, 98, 112) or Color3.fromRGB(178, 185, 198)
+		}
+	end
+end
+
 local ViewportSize = workspace.CurrentCamera.ViewportSize
 local UIScale = ViewportSize.Y / 450
 
 local Settings = redzlib.Settings
 local Flags = redzlib.Flags
 
+local VerifyTheme
 local SetProps, SetChildren, InsertTheme, Create do
 	InsertTheme = function(Instance, Type)
 		table.insert(redzlib.Instances, {
@@ -1051,14 +999,16 @@ local Funcs = {} do
 	end
 	
 	function Funcs:ToggleVisible(Obj, Bool)
-		Obj.Visible = Bool ~= nil and Bool or Obj.Visible
+		if not Obj then return end
+		if type(Bool) == "boolean" then Obj.Visible = Bool else Obj.Visible = not Obj.Visible end
 	end
 	
-	function Funcs:ToggleParent(Obj, Parent)
-		if Bool ~= nil then
-			Obj.Parent = Bool
+	function Funcs:ToggleParent(Obj, Bool, Parent)
+		if not Obj then return end
+		if type(Bool) == "boolean" then
+			Obj.Parent = Bool and Parent or nil
 		else
-			Obj.Parent = not Obj.Parent and Parent
+			Obj.Parent = Obj.Parent and nil or Parent
 		end
 	end
 	
@@ -1256,12 +1206,13 @@ local function MakeDrag(Instance)
 	return Instance
 end
 
-local function VerifyTheme(Theme)
+VerifyTheme = function(Theme)
 	for name,_ in pairs(redzlib.Themes) do
 		if name == Theme then
 			return true
 		end
 	end
+	return false
 end
 
 local function SaveJson(FileName, save)
@@ -1282,11 +1233,11 @@ local function Make(Ele, Instance, props, ...)
 	return Element
 end
 
-AddEle("Corner", function(parent, CornerRadius)
-	local New = SetProps(Create("UICorner", parent, {
-		CornerRadius = CornerRadius or UDim.new(0, 7)
-	}), props)
-	return New
+AddEle("Corner", function(parent, CornerRadius, props)
+	local New = Create("UICorner", parent, {
+		CornerRadius = typeof(CornerRadius) == "UDim" and CornerRadius or UDim.new(0, 7)
+	})
+	return SetProps(New, props)
 end)
 
 AddEle("Stroke", function(parent, props, ...)
@@ -1455,7 +1406,7 @@ function redzlib:SetTheme(NewTheme)
 	SaveJson("redz library V5.json", redzlib.Save)
 	Theme = redzlib.Themes[NewTheme]
 	
-	Comnection:FireConnection("ThemeChanged", NewTheme)
+	Connection:FireConnection("ThemeChanged", NewTheme)
 	table.foreach(redzlib.Instances, function(_,Val)
 		if Val.Type == "Gradient" then
 			Val.Instance.Color = Theme["Color Hub 1"]
@@ -1473,21 +1424,7 @@ function redzlib:SetTheme(NewTheme)
 			Val.Instance[GetColor(Val.Instance)] = Theme["Color Theme"]
 		end
 	end)
-	print("[redzlib] Theme changed to: "..NewTheme)
 end
-
--- دالة جديدة: ترجع كل اسماء الثيمات
-function redzlib:GetThemes()
-	local list = {}
-	for name,_ in pairs(redzlib.Themes) do
-		table.insert(list, name)
-	end
-	return list
-end
-
--- دالة جديدة: تغير الثيم من اي مكان بالسكربت (مثال: redzlib:SetTheme("Ocean"))
--- Alias
-redzlib.ChangeTheme = redzlib.SetTheme
 
 function redzlib:SetScale(NewScale)
 	NewScale = ViewportSize.Y / math.clamp(NewScale, 300, 2000)
@@ -1498,23 +1435,7 @@ function redzlib:MakeWindow(Configs)
 	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
 	local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
 	
-	-- [THEME SELECTOR] تقدر تختار الثيم بالسكربت
-	-- طريقة الاستخدام: MakeWindow({"My Hub", "by Me", Theme = "Ocean"}) او MakeWindow({"Title", "Sub", nil, "Ocean"})
-	local RequestedTheme = Configs.Theme or Configs.ThemeName or Configs[4] or Configs[5]
-	-- اذا Configs[3] كان نص و هو اسم ثيم (مو مسار حفظ) نستخدمه
-	if type(Configs[3]) == "string" and redzlib.Themes[Configs[3]] then
-		RequestedTheme = Configs[3]
-		Settings.ScriptFile = false
-	else
-		Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
-	end
-	if RequestedTheme and redzlib.Themes[RequestedTheme] then
-		redzlib.Save.Theme = RequestedTheme
-	end
-	
-	-- تحديث متغير الثيم المحلي
-	Theme = redzlib.Themes[redzlib.Save.Theme]
-	
+	Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
 	
 	local function LoadFile()
 		local File = Settings.ScriptFile
@@ -1688,6 +1609,9 @@ function redzlib:MakeWindow(Configs)
 	
 	local Minimized, SaveSize, WaitClick
 	local Window, FirstTab = {}, false
+	Window._Root = MainFrame
+	Window._TopBar = TopBar
+	Window._ScreenGui = ScreenGui
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
@@ -2813,5 +2737,369 @@ function redzlib:MakeWindow(Configs)
 	MinimizeButton.Activated:Connect(Window.MinimizeBtn)
 	return Window
 end
+
+
+
+--[[
+    REDZ LIBRARY REMASTERED - EXTENSION LAYER
+    Keeps the original public API while adding new controls and safer helpers.
+    Key verification callbacks run on the client; do not use client-only keys
+    as authorization for valuable server-side actions.
+]]
+redzlib.Version = "2.0.0"
+redzlib.Remastered = true
+redzlib.Utils = redzlib.Utils or {}
+
+local function SafeCall(callback, ...)
+    if type(callback) ~= "function" then return true end
+    local packed = table.pack(...)
+    local ok, result = xpcall(function()
+        return callback(table.unpack(packed, 1, packed.n))
+    end, debug.traceback)
+    if not ok then warn("[Redz Remastered] Callback error:\n" .. tostring(result)) end
+    return ok, result
+end
+
+function redzlib.Utils:SafeCall(callback, ...)
+    return SafeCall(callback, ...)
+end
+
+function redzlib.Utils:Clamp(value, minimum, maximum)
+    return math.clamp(tonumber(value) or minimum, minimum, maximum)
+end
+
+function redzlib.Utils:Round(value, decimals)
+    local factor = 10 ^ (tonumber(decimals) or 0)
+    return math.floor((tonumber(value) or 0) * factor + 0.5) / factor
+end
+
+function redzlib.Utils:DeepCopy(value, seen)
+    if type(value) ~= "table" then return value end
+    seen = seen or {}
+    if seen[value] then return seen[value] end
+    local copy = {}; seen[value] = copy
+    for key, child in pairs(value) do copy[self:DeepCopy(key, seen)] = self:DeepCopy(child, seen) end
+    return copy
+end
+
+function redzlib:CreateKeySystem(config)
+    config = type(config) == "table" and config or {}
+    local keySystem = {Attempts = 0, Verified = false, Closed = false}
+    local expected = config.Key or config.Keys or {}
+    if type(expected) == "string" then expected = {expected} end
+    local verifyCallback = config.Verify or config.Callback
+    function keySystem:Verify(input)
+        if self.Closed or type(input) ~= "string" or input == "" then return false, "Invalid key" end
+        self.Attempts += 1
+        local valid = false
+        if type(verifyCallback) == "function" then
+            local ok, result = SafeCall(verifyCallback, input, self.Attempts)
+            valid = ok and result == true
+        else
+            for _, allowed in ipairs(expected) do
+                if type(allowed) == "string" and input == allowed then valid = true break end
+            end
+        end
+        self.Verified = valid
+        if valid then SafeCall(config.OnSuccess, input) else SafeCall(config.OnFailure, input, self.Attempts) end
+        return valid, valid and "Verified" or "Incorrect key"
+    end
+    function keySystem:Destroy() self.Closed = true; self.Verified = false end
+    return keySystem
+end
+
+local function NewControl(parent, className, properties)
+    local object = Instance.new(className)
+    for property, value in pairs(properties or {}) do
+        local ok, err = pcall(function() object[property] = value end)
+        if not ok then warn("[Redz Remastered] Invalid property " .. tostring(property) .. ": " .. tostring(err)) end
+    end
+    object.Parent = parent
+    return object
+end
+
+local function AddRemasteredCard(tab, title, description, height)
+    local parent = tab and tab.Cont
+    if not parent or not parent.Parent then return nil end
+    local card = NewControl(parent, "Frame", {
+        Name = "RemasteredOption", Size = UDim2.new(1, 0, 0, height or 48),
+        BackgroundColor3 = Theme["Color Hub 2"], BorderSizePixel = 0
+    })
+    NewControl(card, "UICorner", {CornerRadius = UDim.new(0, 8)})
+    NewControl(card, "UIStroke", {Color = Theme["Color Stroke"], Transparency = 0.25, Thickness = 1})
+    NewControl(card, "TextLabel", {
+        Name = "Title", BackgroundTransparency = 1, Position = UDim2.fromOffset(10, 5),
+        Size = UDim2.new(1, -20, 0, 17), Font = Enum.Font.GothamSemibold,
+        Text = tostring(title or "Option"), TextSize = 12, TextXAlignment = Enum.TextXAlignment.Left,
+        TextColor3 = Theme["Color Text"]
+    })
+    if description and description ~= "" then
+        NewControl(card, "TextLabel", {
+            Name = "Description", BackgroundTransparency = 1, Position = UDim2.fromOffset(10, 23),
+            Size = UDim2.new(1, -20, 0, height and height - 26 or 20), Font = Enum.Font.Gotham,
+            Text = tostring(description), TextSize = 10, TextWrapped = true,
+            TextXAlignment = Enum.TextXAlignment.Left, TextYAlignment = Enum.TextYAlignment.Top,
+            TextColor3 = Theme["Color Dark Text"]
+        })
+    end
+    return card
+end
+
+local OriginalMakeWindow = redzlib.MakeWindow
+function redzlib:MakeWindow(config)
+    local window = OriginalMakeWindow(self, config or {})
+    if not window or not window._Root or not window._TopBar then return window end
+
+    -- Always-available top settings control.
+    local settingsButton = NewControl(window._TopBar, "TextButton", {
+        Name = "RemasteredSettings", Size = UDim2.fromOffset(25, 22),
+        Position = UDim2.new(1, -65, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5),
+        BackgroundColor3 = Theme["Color Hub 2"], Text = "⚙", TextSize = 15,
+        Font = Enum.Font.GothamBold, TextColor3 = Theme["Color Text"], AutoButtonColor = true
+    })
+    NewControl(settingsButton, "UICorner", {CornerRadius = UDim.new(0, 6)})
+    local settingsPanel = NewControl(window._Root, "Frame", {
+        Name = "RemasteredSettingsPanel", Visible = false, ZIndex = 30,
+        Size = UDim2.new(0, 210, 0, 250), Position = UDim2.new(1, -8, 0, 32),
+        AnchorPoint = Vector2.new(1, 0), BackgroundColor3 = Theme["Color Hub 2"], BorderSizePixel = 0
+    })
+    NewControl(settingsPanel, "UICorner", {CornerRadius = UDim.new(0, 9)})
+    NewControl(settingsPanel, "UIStroke", {Color = Theme["Color Stroke"], Thickness = 1})
+    NewControl(settingsPanel, "UIPadding", {PaddingTop = UDim.new(0, 9), PaddingLeft = UDim.new(0, 9), PaddingRight = UDim.new(0, 9)})
+    NewControl(settingsPanel, "UIListLayout", {Padding = UDim.new(0, 6), SortOrder = Enum.SortOrder.LayoutOrder})
+    NewControl(settingsPanel, "TextLabel", {
+        Name = "Heading", LayoutOrder = 0, Size = UDim2.new(1, 0, 0, 22),
+        BackgroundTransparency = 1, Text = "LIBRARY SETTINGS", TextSize = 11,
+        Font = Enum.Font.GothamBold, TextColor3 = Theme["Color Text"], TextXAlignment = Enum.TextXAlignment.Left
+    })
+    local themeNames = {}
+    for name in pairs(redzlib.Themes) do table.insert(themeNames, name) end
+    table.sort(themeNames)
+    local themeIndex = table.find(themeNames, redzlib.Save.Theme) or 1
+    local themeButton = NewControl(settingsPanel, "TextButton", {
+        Name = "ThemeSelector", LayoutOrder = 1, Size = UDim2.new(1, 0, 0, 30),
+        BackgroundColor3 = Theme["Color Stroke"], Text = "Theme: " .. tostring(redzlib.Save.Theme),
+        TextColor3 = Theme["Color Text"], Font = Enum.Font.GothamSemibold, TextSize = 11
+    })
+    NewControl(themeButton, "UICorner", {CornerRadius = UDim.new(0, 6)})
+    themeButton.Activated:Connect(function()
+        themeIndex = themeIndex % #themeNames + 1
+        redzlib:SetTheme(themeNames[themeIndex])
+        themeButton.Text = "Theme: " .. themeNames[themeIndex]
+        themeButton.BackgroundColor3 = redzlib.Themes[themeNames[themeIndex]]["Color Stroke"]
+        themeButton.TextColor3 = redzlib.Themes[themeNames[themeIndex]]["Color Text"]
+    end)
+    local resetButton = NewControl(settingsPanel, "TextButton", {
+        Name = "ResetSize", LayoutOrder = 2, Size = UDim2.new(1, 0, 0, 30),
+        BackgroundColor3 = Theme["Color Stroke"], Text = "Reset window size",
+        TextColor3 = Theme["Color Text"], Font = Enum.Font.GothamSemibold, TextSize = 11
+    })
+    NewControl(resetButton, "UICorner", {CornerRadius = UDim.new(0, 6)})
+    resetButton.Activated:Connect(function()
+        local root = window._Root
+        root.Size = UDim2.fromOffset(550, 380)
+        root.Position = UDim2.new(0.5, -275, 0.5, -190)
+        redzlib.Save.UISize = {550, 380}
+    end)
+    local infoLabel = NewControl(settingsPanel, "TextLabel", {
+        Name = "VersionInfo", LayoutOrder = 3, Size = UDim2.new(1, 0, 0, 35),
+        BackgroundTransparency = 1, Text = "Redz Remastered 2.0.0\nSettings are saved when supported by the environment.",
+        TextWrapped = true, TextSize = 9, Font = Enum.Font.Gotham,
+        TextColor3 = Theme["Color Dark Text"], TextXAlignment = Enum.TextXAlignment.Left
+    })
+    settingsButton.Activated:Connect(function() settingsPanel.Visible = not settingsPanel.Visible end)
+    window.SettingsButton = settingsButton
+    window.SettingsPanel = settingsPanel
+
+    local originalMakeTab = window.MakeTab
+    function window:MakeTab(...)
+        local tab = originalMakeTab(self, ...)
+        if not tab or not tab.Cont then return tab end
+
+        function tab:AddLabel(text)
+            local card = AddRemasteredCard(self, text or "Label", nil, 30)
+            return {Destroy = function() if card then card:Destroy() end end,
+                Set = function(_, value) if card and card:FindFirstChild("Title") then card.Title.Text = tostring(value) end end,
+                Visible = function(_, value) if card then card.Visible = value ~= false end end}
+        end
+
+        function tab:AddDivider(text)
+            local holder = NewControl(self.Cont, "Frame", {Name = "Divider", Size = UDim2.new(1, 0, 0, 22), BackgroundTransparency = 1})
+            NewControl(holder, "Frame", {Size = UDim2.new(1, 0, 0, 1), Position = UDim2.new(0, 0, 0.5, 0), BackgroundColor3 = Theme["Color Stroke"], BorderSizePixel = 0})
+            if text then NewControl(holder, "TextLabel", {Size = UDim2.new(0, 120, 1, 0), Position = UDim2.fromOffset(8, 0), BackgroundColor3 = Theme["Color Hub 2"], Text = tostring(text), TextColor3 = Theme["Color Dark Text"], Font = Enum.Font.GothamBold, TextSize = 9}) end
+            return {Destroy = function() holder:Destroy() end}
+        end
+
+        function tab:AddColorPicker(options)
+            options = type(options) == "table" and options or {}
+            local title = options.Name or options.Title or "Color Picker"
+            local selected = typeof(options.Default) == "Color3" and options.Default or Color3.fromRGB(88, 101, 242)
+            local callback = options.Callback or function() end
+            local card = AddRemasteredCard(self, title, options.Desc or options.Description, 54)
+            if not card then return {} end
+            local preview = NewControl(card, "TextButton", {Name = "ColorPreview", Size = UDim2.fromOffset(48, 25), Position = UDim2.new(1, -58, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), BackgroundColor3 = selected, Text = "", AutoButtonColor = true})
+            NewControl(preview, "UICorner", {CornerRadius = UDim.new(0, 6)})
+            local popup = NewControl(card, "Frame", {Name = "ColorPopup", Visible = false, ZIndex = 10, Size = UDim2.fromOffset(180, 74), Position = UDim2.new(1, -185, 1, 2), BackgroundColor3 = Theme["Color Stroke"], BorderSizePixel = 0})
+            NewControl(popup, "UICorner", {CornerRadius = UDim.new(0, 6)})
+            local hex = NewControl(popup, "TextBox", {Name = "HexInput", ZIndex = 11, Size = UDim2.new(1, -12, 0, 28), Position = UDim2.fromOffset(6, 6), BackgroundColor3 = Theme["Color Hub 2"], Text = "#" .. selected:ToHex(), PlaceholderText = "#RRGGBB", TextColor3 = Theme["Color Text"], Font = Enum.Font.Code, TextSize = 12, ClearTextOnFocus = false})
+            NewControl(hex, "UICorner", {CornerRadius = UDim.new(0, 4)})
+            local apply = NewControl(popup, "TextButton", {ZIndex = 11, Size = UDim2.new(1, -12, 0, 25), Position = UDim2.fromOffset(6, 40), BackgroundColor3 = Theme["Color Theme"], Text = "Apply color", TextColor3 = Color3.new(1,1,1), Font = Enum.Font.GothamBold, TextSize = 10})
+            NewControl(apply, "UICorner", {CornerRadius = UDim.new(0, 4)})
+            local function setColor(color)
+                if typeof(color) ~= "Color3" then return end
+                selected = color; preview.BackgroundColor3 = color; hex.Text = "#" .. color:ToHex()
+                SafeCall(callback, color); if options.Flag then SetFlag(options.Flag, {R=color.R,G=color.G,B=color.B}) end
+            end
+            preview.Activated:Connect(function() popup.Visible = not popup.Visible end)
+            apply.Activated:Connect(function()
+                local raw = hex.Text:gsub("#", "")
+                if #raw == 6 and raw:match("^%x%x%x%x%x%x$") then
+                    local ok, color = pcall(Color3.fromHex, raw)
+                    if ok then setColor(color); popup.Visible = false end
+                end
+            end)
+            local control = {}
+            function control:Set(value) if typeof(value) == "Color3" then setColor(value) elseif type(value) == "string" then hex.Text = value end end
+            function control:Get() return selected end
+            function control:Destroy() card:Destroy() end
+            function control:Visible(value) card.Visible = value ~= false end
+            return control
+        end
+
+        function tab:AddKeybind(options)
+            options = type(options) == "table" and options or {}
+            local card = AddRemasteredCard(self, options.Name or options.Title or "Keybind", options.Desc or "Click the key field, then press a key", 48)
+            if not card then return {} end
+            local current = options.Default or Enum.KeyCode.RightShift
+            local listening = false
+            local callback = options.Callback or function() end
+            local keyButton = NewControl(card, "TextButton", {Name = "KeyButton", Size = UDim2.fromOffset(90, 26), Position = UDim2.new(1, -100, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), BackgroundColor3 = Theme["Color Stroke"], Text = current.Name, TextColor3 = Theme["Color Text"], Font = Enum.Font.GothamBold, TextSize = 10})
+            NewControl(keyButton, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            local connection
+            local function bind(key)
+                if connection then connection:Disconnect() end
+                current = key; keyButton.Text = key.Name
+                connection = UserInputService.InputBegan:Connect(function(input, processed)
+                    if not processed and input.KeyCode == current then SafeCall(callback, current) end
+                end)
+            end
+            keyButton.Activated:Connect(function() listening = true; keyButton.Text = "Press key..." end)
+            local capture = UserInputService.InputBegan:Connect(function(input, processed)
+                if listening and input.UserInputType == Enum.UserInputType.Keyboard then
+                    listening = false; bind(input.KeyCode)
+                end
+            end)
+            bind(current)
+            return {Set = function(_, key) if typeof(key) == "EnumItem" and key.EnumType == Enum.KeyCode then bind(key) end end,
+                Get = function() return current end, Destroy = function() if connection then connection:Disconnect() end; capture:Disconnect(); card:Destroy() end,
+                Visible = function(_, value) card.Visible = value ~= false end}
+        end
+
+        function tab:AddMultiDropdown(options)
+            options = type(options) == "table" and options or {}
+            local values = options.Options or {}
+            local selected = {}
+            local card = AddRemasteredCard(self, options.Name or options.Title or "Multi Select", options.Desc or "Select multiple options", 48)
+            if not card then return {} end
+            local button = NewControl(card, "TextButton", {Size = UDim2.fromOffset(130, 27), Position = UDim2.new(1, -140, 0.5, 0), AnchorPoint = Vector2.new(0, 0.5), BackgroundColor3 = Theme["Color Stroke"], Text = "Choose options", TextColor3 = Theme["Color Text"], Font = Enum.Font.Gotham, TextSize = 10})
+            NewControl(button, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            local popup = NewControl(card, "Frame", {Visible = false, ZIndex = 12, Size = UDim2.new(0, 130, 0, math.min(#values * 25 + 8, 150)), Position = UDim2.new(1, -140, 1, 1), BackgroundColor3 = Theme["Color Stroke"], BorderSizePixel = 0})
+            NewControl(popup, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            NewControl(popup, "UIListLayout", {Padding = UDim.new(0, 2)})
+            local function emit() local result = {}; for value in pairs(selected) do table.insert(result, value) end; table.sort(result); button.Text = #result > 0 and table.concat(result, ", ") or "Choose options"; SafeCall(options.Callback, result); if options.Flag then SetFlag(options.Flag, result) end end
+            for _, value in ipairs(values) do
+                local item = NewControl(popup, "TextButton", {Size = UDim2.new(1, 0, 0, 24), BackgroundTransparency = 1, Text = tostring(value), TextColor3 = Theme["Color Text"], Font = Enum.Font.Gotham, TextSize = 10})
+                item.Activated:Connect(function() selected[value] = not selected[value] and true or nil; item.Text = (selected[value] and "✓  " or "   ") .. tostring(value); emit() end)
+            end
+            button.Activated:Connect(function() popup.Visible = not popup.Visible end)
+            return {Get = function() local r={}; for v in pairs(selected) do table.insert(r,v) end; return r end,
+                Set = function(_, list) selected={}; for _,v in ipairs(list or {}) do selected[v]=true end; emit() end,
+                Destroy = function() card:Destroy() end, Visible = function(_, value) card.Visible=value ~= false end}
+        end
+
+        function tab:AddProgressBar(options)
+            options = type(options) == "table" and options or {}
+            local minimum, maximum = tonumber(options.Min) or 0, tonumber(options.Max) or 100
+            if maximum <= minimum then maximum = minimum + 1 end
+            local value = math.clamp(tonumber(options.Default) or minimum, minimum, maximum)
+            local card = AddRemasteredCard(self, options.Name or "Progress", options.Desc, 55)
+            if not card then return {} end
+            local bar = NewControl(card, "Frame", {Size = UDim2.new(1, -20, 0, 7), Position = UDim2.fromOffset(10, 39), BackgroundColor3 = Theme["Color Stroke"], BorderSizePixel = 0})
+            NewControl(bar, "UICorner", {CornerRadius = UDim.new(1, 0)})
+            local fill = NewControl(bar, "Frame", {Size = UDim2.new((value-minimum)/(maximum-minimum),0,1,0), BackgroundColor3 = Theme["Color Theme"], BorderSizePixel = 0})
+            NewControl(fill, "UICorner", {CornerRadius = UDim.new(1, 0)})
+            local function set(newValue) value=math.clamp(tonumber(newValue) or minimum,minimum,maximum); fill.Size=UDim2.new((value-minimum)/(maximum-minimum),0,1,0); SafeCall(options.Callback,value) end
+            return {Set = function(_, v) set(v) end, Get = function() return value end, Destroy = function() card:Destroy() end}
+        end
+
+        function tab:AddSearchBox(options)
+            options = type(options) == "table" and options or {}
+            local card = AddRemasteredCard(self, options.Name or "Search", options.Desc, 48)
+            if not card then return {} end
+            local input = NewControl(card, "TextBox", {Size = UDim2.new(0.55, 0, 0, 27), Position = UDim2.new(1, -10, 0.5, 0), AnchorPoint = Vector2.new(1, 0.5), BackgroundColor3 = Theme["Color Stroke"], Text = "", PlaceholderText = options.Placeholder or "Search...", TextColor3 = Theme["Color Text"], PlaceholderColor3 = Theme["Color Dark Text"], Font = Enum.Font.Gotham, TextSize = 10, ClearTextOnFocus = false})
+            NewControl(input, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            input:GetPropertyChangedSignal("Text"):Connect(function() SafeCall(options.Callback, input.Text) end)
+            return {Get = function() return input.Text end, Set = function(_, v) input.Text=tostring(v or "") end, Destroy = function() card:Destroy() end}
+        end
+
+        function tab:AddNestedTabs(options)
+            options = type(options) == "table" and options or {}
+            local group = {Tabs = {}, Selected = nil}
+            local holder = NewControl(self.Cont, "Frame", {Name = "NestedTabs", Size = UDim2.new(1, 0, 0, 0), AutomaticSize = Enum.AutomaticSize.Y, BackgroundTransparency = 1})
+            local nav = NewControl(holder, "Frame", {Size = UDim2.new(1, 0, 0, 30), BackgroundTransparency = 1})
+            NewControl(nav, "UIListLayout", {FillDirection = Enum.FillDirection.Horizontal, Padding = UDim.new(0, 5)})
+            local pages = NewControl(holder, "Frame", {Name = "Pages", Position = UDim2.fromOffset(0, 34), Size = UDim2.new(1, 0, 0, 0), AutomaticSize = Enum.AutomaticSize.Y, BackgroundTransparency = 1})
+            function group:AddTab(tabOptions)
+                tabOptions = type(tabOptions) == "table" and tabOptions or {Name=tostring(tabOptions)}
+                local page = NewControl(pages, "Frame", {Name = tostring(tabOptions.Name or "Subtab"), Visible = #self.Tabs == 0, Size = UDim2.new(1, 0, 0, 0), AutomaticSize = Enum.AutomaticSize.Y, BackgroundTransparency = 1})
+                NewControl(page, "UIListLayout", {Padding = UDim.new(0, 5)})
+                local navButton = NewControl(nav, "TextButton", {Size = UDim2.fromOffset(90, 27), BackgroundColor3 = Theme["Color Stroke"], Text = tostring(tabOptions.Name or "Subtab"), TextColor3 = Theme["Color Text"], Font = Enum.Font.GothamSemibold, TextSize = 10})
+                NewControl(navButton, "UICorner", {CornerRadius = UDim.new(0, 5)})
+                local sub = {Cont = page}
+                function sub:AddButton(cfg)
+                    cfg=type(cfg)=="table" and cfg or {Name=tostring(cfg)}
+                    local b=NewControl(page,"TextButton",{Size=UDim2.new(1,0,0,32),BackgroundColor3=Theme["Color Hub 2"],Text=tostring(cfg.Name or cfg.Title or "Button"),TextColor3=Theme["Color Text"],Font=Enum.Font.GothamBold,TextSize=11})
+                    NewControl(b,"UICorner",{CornerRadius=UDim.new(0,6)}); b.Activated:Connect(function() SafeCall(cfg.Callback) end)
+                    return {Destroy=function() b:Destroy() end}
+                end
+                function sub:AddParagraph(cfg)
+                    cfg=type(cfg)=="table" and cfg or {Title="Info",Text=tostring(cfg)}
+                    local f=NewControl(page,"Frame",{Size=UDim2.new(1,0,0,48),BackgroundColor3=Theme["Color Hub 2"]}); NewControl(f,"UICorner",{CornerRadius=UDim.new(0,6)})
+                    NewControl(f,"TextLabel",{Size=UDim2.new(1,-14,1,-10),Position=UDim2.fromOffset(7,5),BackgroundTransparency=1,Text=tostring(cfg.Title or "Info").."\n"..tostring(cfg.Text or cfg.Desc or ""),TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left,TextColor3=Theme["Color Text"],Font=Enum.Font.Gotham,TextSize=10})
+                    return {Destroy=function() f:Destroy() end}
+                end
+                navButton.Activated:Connect(function() for _,entry in ipairs(group.Tabs) do entry.Page.Visible=false end; page.Visible=true; group.Selected=sub end)
+                table.insert(group.Tabs,{Page=page,Button=navButton,Tab=sub}); if not group.Selected then group.Selected=sub end
+                return sub
+            end
+            function group:Destroy() holder:Destroy() end
+            return group
+        end
+
+        function tab:AddKeySystem(options)
+            options = type(options) == "table" and options or {}
+            local keySystem = redzlib:CreateKeySystem(options)
+            local card = AddRemasteredCard(self, options.Name or "Access Key", options.Desc or "Enter your access key", 78)
+            if not card then return keySystem end
+            local input = NewControl(card, "TextBox", {Size = UDim2.new(0.55, 0, 0, 27), Position = UDim2.new(1, -10, 0, 7), AnchorPoint = Vector2.new(1, 0), BackgroundColor3 = Theme["Color Stroke"], Text = "", PlaceholderText = "Enter key", TextColor3 = Theme["Color Text"], Font = Enum.Font.Gotham, TextSize = 10, ClearTextOnFocus = false})
+            NewControl(input, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            local verify = NewControl(card, "TextButton", {Size = UDim2.new(0.55, 0, 0, 25), Position = UDim2.new(1, -10, 0, 41), AnchorPoint = Vector2.new(1, 0), BackgroundColor3 = Theme["Color Theme"], Text = "Verify", TextColor3 = Color3.new(1,1,1), Font = Enum.Font.GothamBold, TextSize = 10})
+            NewControl(verify, "UICorner", {CornerRadius = UDim.new(0, 5)})
+            verify.Activated:Connect(function()
+                local valid, message = keySystem:Verify(input.Text)
+                verify.Text = valid and "Verified" or tostring(message)
+                if valid then SafeCall(options.OnVerified, input.Text) end
+            end)
+            local destroy = keySystem.Destroy
+            function keySystem:Destroy() destroy(self); card:Destroy() end
+            keySystem.Frame = card
+            return keySystem
+        end
+
+        return tab
+    end
+    return window
+end
+
 
 return redzlib
